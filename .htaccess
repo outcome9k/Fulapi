@@ -1,11 +1,4 @@
 RewriteEngine On
-Header always set X-Content-Type-Options nosniff
-Header always set X-Frame-Options DENY
-Header always set X-XSS-Protection "1; mode=block"
-
-php_value max_execution_time 30
-php_value memory_limit 128M
-
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-d  
 RewriteRule ^(.*)$ index.php [QSA,L]
