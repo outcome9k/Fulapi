@@ -1,6 +1,5 @@
 {
     "require": {
-        "php": "^7.4",
-        "ext-sqlite3": "*"
+        "php": "^7.4"
     }
 }
